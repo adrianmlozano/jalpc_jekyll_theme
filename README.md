@@ -41,14 +41,14 @@ $ rm -rf _site && jekyll server
 The _config.yml located in the root of the jalpc_jekyll_theme directory contains all of the configuration details for the Jekyll site. The defaults are:
 
 ``` yml
-# Welcome to Jekyll!
+# Website settings
+title: "Jalpc"
+description: "Jack's blog,use Jekyll and github pages."
+keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
 
-# Site settings
-title: "Jalpc"    ### Website title
-
-baseurl: "/"      ### Some links refer to this
-url: "http://www.jack003.com"     ### This is for product environment
-# url: "http://127.0.0.1:4000"    ### This is used for debug 
+baseurl: "/"
+url: "http://www.jack003.com"
+# url: "http://127.0.0.1:4000"
 
 # author
 author:
@@ -58,7 +58,15 @@ author:
   email: 'jack19890614@gmail.com'
   facebook_username: 'jiakunnj'
   github_username: 'Jack614'
-  head_img: 'static/img/landing/Jack.jpg'   ### Relative path
+  head_img: 'static/img/landing/Jack.jpg'
+
+# social link
+jingyu:
+  first_name: 'Yu'
+  last_name: 'Jing'
+  description: 'Painter.'
+  link: 'http://angular.jack003.com'
+  email: '805963294@qq.com'
 
 # landing page
 landing:
@@ -66,8 +74,24 @@ landing:
   about: 'About'
   career: 'Career'
   skills: 'Skills'
+  projects: 'Project'
   blog: 'Blog'
-  contact: 'Contact'
+  contact: 'Link'
+
+# my projects
+project:
+  saplatform:
+    name: 'Saplatform'
+    url: '/Jack614/saplatform'
+    img: 'static/img/landing/saplatform.jpg'
+  jalpc:
+    name: 'Jalpc'
+    url: '/Jack614/jalpc_jekyll_theme'
+    img: 'static/img/landing/jekyll.jpg'
+  angularjs:
+    name: 'Jalpc-A'
+    url: '/Jack614/Jalpc-A'
+    img: 'static/img/landing/angularjs.jpg'
 
 # blog index
 index:
@@ -78,18 +102,6 @@ index:
   database: 'Database'
   mac: 'Mac'
   life: 'Life'
-
-# comment
-changyan:
-  appid: cysfY7ULn
-  conf: prod_861928934cecb7a18e15bedaed9dae29
-
-# share
-bshare:
-  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
-
-# blog img path
-img_path: '/static/img/blog'    ### Full path
 
 ...
 ```
@@ -218,7 +230,7 @@ Next you need to add html indicators in all place you want to use i18.(index.htm
 
 #### Step 3
 
-Next you need to initialise the i18next plugin: 
+Next you need to initialise the i18next plugin:
 json files are located in `static/locales` folder.
 
 ``` javascript
@@ -271,7 +283,7 @@ I use [Baidu analytics](http://tongji.baidu.com/web/welcome/login) and [Google a
 
 ### Comment
 
-I use [Changyan](http://changyan.kuaizhan.com/) and [Disqus](https://disqus.com/) to realize comment. 
+I use [Changyan](http://changyan.kuaizhan.com/) and [Disqus](https://disqus.com/) to realize comment.
 
 #### Changyan
 To configure Changyan, get the appid and conf in <http://changyan.kuaizhan.com/>. Then, in `_config.yml`, edit the changyan value to enable Changyan.
@@ -298,7 +310,7 @@ Replace your website domain in **CNAME** file.
 ### Put in a Jalpc Plug
 
 If you want to give credit to the Jalpc theme with a link to my personal website <http://www.jack003.com>, that'd be awesome. No worries if you don't.
- 
+
 ### Enjoy
 
 I hope you enjoy using Jalpc. If you encounter any issues, please feel free to let me know by creating an issue. I'd love to help.
