@@ -36,7 +36,7 @@ $ gem install jekyll # If you don't have jekyll installed
 $ rm -rf _site && jekyll server
 ```
 
-### Modify the _config.yml
+### Modify the `_config.yml`
 
 The _config.yml located in the root of the jalpc_jekyll_theme directory contains all of the configuration details for the Jekyll site. The defaults are:
 
